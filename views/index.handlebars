@@ -1,0 +1,61 @@
+<!--  ./views/index.handlebars -->
+<div class="container py-5">
+
+  <div class="row">
+    <div class="col-12 col-xl-10 mx-auto">
+      <div class="card">
+        <div>
+          <h2 class="font-weight-bolder text-center my-2 font-weight-bold">你想對誰說幹話???</h2>
+        </div>
+        <form method="POST" action="/">
+          <div class="card-body card-columns">
+            <div class="card mb-3 form-group form-column bg-primary border-primary">
+              <div style="height: 240px;">
+                <img class="card-img-top bg-light" style="height:100%"
+                  src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg"
+                  alt="...">
+              </div>
+              <div class="custom-radio text-center">
+                <input type="radio" id="engineer" name="job" value="engineer">
+                <label for="engineer" name="engineer" class="h5 text-white-50 font-weight-bold">工程師</label>
+              </div>
+            </div>
+            <div class="card mb-3 form-group form-column bg-info border-info">
+              <div style="height: 240px;">
+                <img class="card-img-top" style="height:100%"
+                  src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg" alt="...">
+              </div>
+              <div class="custom-radio text-center">
+                <input type="radio" id="designer" name="job" value="designer">
+                <label for="designer" name="designer" class="h5 text-white-50 font-weight-bold">設計師</label>
+              </div>
+            </div>
+            <div class="card mb-3 form-group form-column bg-danger border-danger">
+              <div style="height: 240px;">
+                <img class="card-img-top" style="height:100%"
+                  src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg" alt="...">
+              </div>
+              <div class="custom-radio text-center">
+                <input type="radio" id="entrepreneur" name="job" value="entrepreneur">
+                <label for="entrepreneur" name="entrepreneur" class="h5 text-white-50 font-weight-bold">創業家</label>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer col-12 mx-auto">
+            <div class="card-columns row">
+              <!--Button-->
+              <div class="col-2">
+                <button class="btn btn-success font-weight-bold" type="submit">來句幹話</button>
+              </div>
+              <!--Rubbish text-->
+              <div class="col-10">
+                <textarea class="form-control" rows="4">{{rubbish}}</textarea>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
