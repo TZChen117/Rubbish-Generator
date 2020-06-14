@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
   const job = req.body.job
   const rubbish = generateRubbish(job)
-  res.render('index', { rubbish: rubbish, job: job })
+  res.render('index', { rubbish, job})
 })
 
 app.listen(port, () => {

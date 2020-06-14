@@ -7,7 +7,7 @@ function sample(array) {
 // generate rubbish by selection
 function generateRubbish(job) {
   // jobs, task and phrase 
-   const jobs = {
+  const jobs = {
     engineer: '工程師',
     designer: '設計師',
     entrepreneur: '創業家'
@@ -25,19 +25,19 @@ function generateRubbish(job) {
   }
   let rubbish = ''
   if (job === 'engineer') {
-    rubbish = jobs[job] + sample(task[job]) + sample(phrase)
+    // rubbish = jobs[job] + sample(task[job]) + sample(phrase)
   }
 
   if (job === 'designer') {
-    rubbish = jobs[job] + sample(task[job]) + sample(phrase)
+    // rubbish = jobs[job] + sample(task[job]) + sample(phrase)
   }
 
   if (job === 'entrepreneur') {
-    rubbish = jobs[job] + sample(task[job]) + sample(phrase)
+    // rubbish = jobs[job] + sample(task[job]) + sample(phrase)
   }
 
   // return generated rubbish  
-  return rubbish
+  return jobs[job] + sample(task[job]) + sample(phrase)
 }
 // export generateRubbish function for other files to use
 module.exports = generateRubbish
